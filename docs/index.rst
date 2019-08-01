@@ -1,4 +1,4 @@
-Journal of Open Source Software
+TEST: Journal of Open Source Software
 ===============================
 
 The `Journal of Open Source Software
