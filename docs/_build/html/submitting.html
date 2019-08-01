@@ -1,0 +1,448 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Submitting a paper to JOSS &mdash; JOSS  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Review Criteria" href="review_criteria.html" />
+    <link rel="prev" title="Journal of Open Source Software" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> JOSS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Author and Reviewer Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Submitting a paper to JOSS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#typical-paper-submission-flow">Typical paper submission flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-should-my-paper-contain">What should my paper contain?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-paper-and-bibliography">Example paper and bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submitting-your-paper">Submitting your paper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submission-requirements">Submission requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-about-submissions-that-rely-upon-proprietary-languages-development-environments">What about submissions that rely upon proprietary languages/development environments?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#the-review-process">The review process</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="review_criteria.html">Review Criteria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviewer_guidelines.html">The JOSS review process</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Whedon Editorial Bot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whedon.html">Interacting with Whedon</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing the JOSS application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JOSS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Submitting a paper to JOSS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/submitting.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="submitting-a-paper-to-joss">
+<span id="submitting-a-paper-to-joss"></span><h1>Submitting a paper to JOSS<a class="headerlink" href="#submitting-a-paper-to-joss" title="Permalink to this headline">¶</a></h1>
+<p>If you’ve already licensed your code and have good documentation then we expect that it should take less than an hour to prepare and submit your paper to JOSS.</p>
+<div class="section" id="typical-paper-submission-flow">
+<span id="typical-paper-submission-flow"></span><h2>Typical paper submission flow<a class="headerlink" href="#typical-paper-submission-flow" title="Permalink to this headline">¶</a></h2>
+<p>Before you submit we need you to:</p>
+<ul class="simple">
+<li>Make software available in an open repository (GitHub, Bitbucket etc.) and include an <a class="reference external" href="https://opensource.org/licenses">OSI approved open source license</a>-</li>
+<li>Author a short Markdown paper <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> with a title, summary, author names, affiliations, and key references. See an example <a class="reference external" href="https://github.com/arfon/fidgit/tree/master/paper">here</a>.</li>
+<li>(Optional) create a metadata file and include it in your repository describing your software. <a class="reference external" href="https://gist.github.com/arfon/478b2ed49e11f984d6fb">This script</a> automates the generation of this metadata.</li>
+</ul>
+</div>
+<div class="section" id="what-should-my-paper-contain">
+<span id="what-should-my-paper-contain"></span><h2>What should my paper contain?<a class="headerlink" href="#what-should-my-paper-contain" title="Permalink to this headline">¶</a></h2>
+<p>JOSS welcomes submissions from broadly diverse research areas. For this reason, we request that authors include in the paper some sentences that would explain the software functionality and domain of use to a non-specialist reader. Your submission should probably be somewhere between 250-1000 words.</p>
+<p>In addition, your paper should include:</p>
+<ul class="simple">
+<li>A list of the authors of the software and their affiliations</li>
+<li>A summary describing the high-level functionality and purpose of the software for a diverse, <em>non-specialist audience</em></li>
+<li>A clear statement of need that illustrates the purpose of the software</li>
+<li>A list of key references including a link to the software archive</li>
+<li>Mentions (if applicable) of any ongoing research projects using the software or recent scholarly publications enabled by it</li>
+</ul>
+<p>As this short list shows, JOSS papers are only permitted to contain a limited set of metadata (see header below), Statement of Need, Summary, and Reference sections. You can see an example accepted paper <a class="reference external" href="https://raw.githubusercontent.com/adrn/gala/f6bb2532afeed3c0b0feea3037bf71a3f42b2a12/paper/paper.md">here</a>. Given this paper format it is not permitted to write a “full length” paper i.e. one that includes software documentation such as API (Application Programming Interface) functionality, as this should instead be outlined in the software documentation.</p>
+</div>
+<div class="section" id="example-paper-and-bibliography">
+<span id="example-paper-and-bibliography"></span><h2>Example paper and bibliography<a class="headerlink" href="#example-paper-and-bibliography" title="Permalink to this headline">¶</a></h2>
+<p>This example <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> is adapted from <em>Gala: A Python package for galactic dynamics</em> by Adrian M. Price-Whelan <a class="reference external" href="http://doi.org/10.21105/joss.00388">http://doi.org/10.21105/joss.00388</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>---
+title: &#39;Gala: A Python package for galactic dynamics&#39;
+tags:
+  - Python
+  - astronomy
+  - dynamics
+  - galactic dynamics
+  - milky way
+authors:
+  - name: Adrian M. Price-Whelan
+    orcid: 0000-0003-0872-7098
+    affiliation: &quot;1, 2&quot; # (Multiple affiliations must be quoted)
+  - name: Author 2
+    orcid: 0000-0000-0000-0000
+    affiliation: 2
+affiliations:
+ - name: Lyman Spitzer, Jr. Fellow, Princeton University
+   index: 1
+ - name: Institution 2
+   index: 2
+date: 13 August 2017
+bibliography: paper.bib
+---
+
+# Summary
+
+The forces on stars, galaxies, and dark matter under external gravitational
+fields lead to the dynamical evolution of structures in the universe. The orbits
+of these bodies are therefore key to understanding the formation, history, and
+future state of galaxies. The field of &quot;galactic dynamics,&quot; which aims to model
+the gravitating components of galaxies to study their structure and evolution,
+is now well-established, commonly taught, and frequently used in astronomy.
+Aside from toy problems and demonstrations, the majority of problems require
+efficient numerical tools, many of which require the same base code (e.g., for
+performing numerical orbit integration).
+
+``Gala`` is an Astropy-affiliated Python package for galactic dynamics. Python
+enables wrapping low-level languages (e.g., C) for speed without losing
+flexibility or ease-of-use in the user-interface. The API for ``Gala`` was
+designed to provide a class-based and user-friendly interface to fast (C or
+Cython-optimized) implementations of common operations such as gravitational
+potential and force evaluation, orbit integration, dynamical transformations,
+and chaos indicators for nonlinear dynamics. ``Gala`` also relies heavily on and
+interfaces well with the implementations of physical units and astronomical
+coordinate systems in the ``Astropy`` package [@astropy] (``astropy.units`` and
+``astropy.coordinates``).
+
+``Gala`` was designed to be used by both astronomical researchers and by
+students in courses on gravitational dynamics or astronomy. It has already been
+used in a number of scientific publications [@Pearson:2017] and has also been
+used in graduate courses on Galactic dynamics to, e.g., provide interactive
+visualizations of textbook material [@Binney:2008]. The combination of speed,
+design, and support for Astropy functionality in ``Gala`` will enable exciting
+scientific explorations of forthcoming data releases from the *Gaia* mission
+[@gaia] by students and experts alike. The source code for ``Gala`` has been
+archived to Zenodo with the linked DOI: [@zenodo]
+
+Citations to entries in paper.bib should be in
+[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+format.
+
+Figures can be included like this: ![Example figure.](figure.png)
+
+# Acknowledgements
+
+We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
+Oh, and support from Kathryn Johnston during the genesis of this project.
+
+# References
+</pre></div>
+</div>
+<p>Example <code class="docutils literal notranslate"><span class="pre">paper.bib</span></code> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@article</span><span class="p">{</span><span class="n">Pearson</span><span class="p">:</span><span class="mi">2017</span><span class="p">,</span>
+    <span class="n">Adsnote</span> <span class="o">=</span> <span class="p">{</span><span class="n">Provided</span> <span class="n">by</span> <span class="n">the</span> <span class="n">SAO</span><span class="o">/</span><span class="n">NASA</span> <span class="n">Astrophysics</span> <span class="n">Data</span> <span class="n">System</span><span class="p">},</span>
+    <span class="n">Adsurl</span> <span class="o">=</span> <span class="p">{</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">adsabs</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="nb">abs</span><span class="o">/</span><span class="mi">2017</span><span class="n">arXiv170304627P</span><span class="p">},</span>
+    <span class="n">Archiveprefix</span> <span class="o">=</span> <span class="p">{</span><span class="n">arXiv</span><span class="p">},</span>
+    <span class="n">Author</span> <span class="o">=</span> <span class="p">{{</span><span class="n">Pearson</span><span class="p">},</span> <span class="n">S</span><span class="o">.</span> <span class="ow">and</span> <span class="p">{</span><span class="n">Price</span><span class="o">-</span><span class="n">Whelan</span><span class="p">},</span> <span class="n">A</span><span class="o">.~</span><span class="n">M</span><span class="o">.</span> <span class="ow">and</span> <span class="p">{</span><span class="n">Johnston</span><span class="p">},</span> <span class="n">K</span><span class="o">.~</span><span class="n">V</span><span class="o">.</span><span class="p">},</span>
+    <span class="n">Eprint</span> <span class="o">=</span> <span class="p">{</span><span class="mf">1703.04627</span><span class="p">},</span>
+    <span class="n">Journal</span> <span class="o">=</span> <span class="p">{</span><span class="n">ArXiv</span> <span class="n">e</span><span class="o">-</span><span class="n">prints</span><span class="p">},</span>
+    <span class="n">Keywords</span> <span class="o">=</span> <span class="p">{</span><span class="n">Astrophysics</span> <span class="o">-</span> <span class="n">Astrophysics</span> <span class="n">of</span> <span class="n">Galaxies</span><span class="p">},</span>
+    <span class="n">Month</span> <span class="o">=</span> <span class="n">mar</span><span class="p">,</span>
+    <span class="n">Title</span> <span class="o">=</span> <span class="p">{{</span><span class="n">Gaps</span> <span class="ow">in</span> <span class="n">Globular</span> <span class="n">Cluster</span> <span class="n">Streams</span><span class="p">:</span> <span class="n">Pal</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">Galactic</span> <span class="n">Bar</span><span class="p">}},</span>
+    <span class="n">Year</span> <span class="o">=</span> <span class="mi">2017</span>
+<span class="p">}</span>
+
+<span class="nd">@book</span><span class="p">{</span><span class="n">Binney</span><span class="p">:</span><span class="mi">2008</span><span class="p">,</span>
+    <span class="n">Adsnote</span> <span class="o">=</span> <span class="p">{</span><span class="n">Provided</span> <span class="n">by</span> <span class="n">the</span> <span class="n">SAO</span><span class="o">/</span><span class="n">NASA</span> <span class="n">Astrophysics</span> <span class="n">Data</span> <span class="n">System</span><span class="p">},</span>
+    <span class="n">Adsurl</span> <span class="o">=</span> <span class="p">{</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">adsabs</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="nb">abs</span><span class="o">/</span><span class="mi">2008</span><span class="n">gady</span><span class="o">.</span><span class="n">book</span><span class="o">.....</span><span class="n">B</span><span class="p">},</span>
+    <span class="n">Author</span> <span class="o">=</span> <span class="p">{{</span><span class="n">Binney</span><span class="p">},</span> <span class="n">J</span><span class="o">.</span> <span class="ow">and</span> <span class="p">{</span><span class="n">Tremaine</span><span class="p">},</span> <span class="n">S</span><span class="o">.</span><span class="p">},</span>
+    <span class="n">Booktitle</span> <span class="o">=</span> <span class="p">{</span><span class="n">Galactic</span> <span class="n">Dynamics</span><span class="p">:</span> <span class="n">Second</span> <span class="n">Edition</span><span class="p">,</span> <span class="n">by</span> <span class="n">James</span> <span class="n">Binney</span> <span class="ow">and</span> <span class="n">Scott</span> <span class="n">Tremaine</span><span class="o">.~</span><span class="n">ISBN</span> <span class="mi">978</span><span class="o">-</span><span class="mi">0</span><span class="o">-</span><span class="mi">691</span><span class="o">-</span><span class="mi">13026</span><span class="o">-</span><span class="mi">2</span> <span class="p">(</span><span class="n">HB</span><span class="p">)</span><span class="o">.~</span><span class="n">Published</span> <span class="n">by</span> <span class="n">Princeton</span> <span class="n">University</span> <span class="n">Press</span><span class="p">,</span> <span class="n">Princeton</span><span class="p">,</span> <span class="n">NJ</span> <span class="n">USA</span><span class="p">,</span> <span class="mf">2008.</span><span class="p">},</span>
+    <span class="n">Publisher</span> <span class="o">=</span> <span class="p">{</span><span class="n">Princeton</span> <span class="n">University</span> <span class="n">Press</span><span class="p">},</span>
+    <span class="n">Title</span> <span class="o">=</span> <span class="p">{{</span><span class="n">Galactic</span> <span class="n">Dynamics</span><span class="p">:</span> <span class="n">Second</span> <span class="n">Edition</span><span class="p">}},</span>
+    <span class="n">Year</span> <span class="o">=</span> <span class="mi">2008</span>
+<span class="p">}</span>
+
+<span class="nd">@article</span><span class="p">{</span><span class="n">zenodo</span><span class="p">,</span>
+    <span class="n">Abstractnote</span> <span class="o">=</span> <span class="p">{</span><span class="n">Gala</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">Python</span> <span class="n">package</span> <span class="k">for</span> <span class="n">Galactic</span> <span class="n">astronomy</span> <span class="ow">and</span> <span class="n">gravitational</span> <span class="n">dynamics</span><span class="o">.</span> <span class="n">The</span> <span class="n">bulk</span> <span class="n">of</span> <span class="n">the</span> <span class="n">package</span> <span class="n">centers</span> <span class="n">around</span> <span class="n">implementations</span> <span class="n">of</span> <span class="n">gravitational</span> <span class="n">potentials</span><span class="p">,</span> <span class="n">numerical</span> <span class="n">integration</span><span class="p">,</span> <span class="ow">and</span> <span class="n">nonlinear</span> <span class="n">dynamics</span><span class="o">.</span><span class="p">},</span>
+    <span class="n">Author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Adrian</span> <span class="n">Price</span><span class="o">-</span><span class="n">Whelan</span> <span class="ow">and</span> <span class="n">Brigitta</span> <span class="n">Sipocz</span> <span class="ow">and</span> <span class="n">Syrtis</span> <span class="n">Major</span> <span class="ow">and</span> <span class="n">Semyeong</span> <span class="n">Oh</span><span class="p">},</span>
+    <span class="n">Date</span><span class="o">-</span><span class="n">Modified</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2017</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">13</span> <span class="mi">14</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span><span class="mi">18</span> <span class="o">+</span><span class="mi">0000</span><span class="p">},</span>
+    <span class="n">Doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.5281</span><span class="o">/</span><span class="n">zenodo</span><span class="o">.</span><span class="mi">833339</span><span class="p">},</span>
+    <span class="n">Month</span> <span class="o">=</span> <span class="p">{</span><span class="n">Jul</span><span class="p">},</span>
+    <span class="n">Publisher</span> <span class="o">=</span> <span class="p">{</span><span class="n">Zenodo</span><span class="p">},</span>
+    <span class="n">Title</span> <span class="o">=</span> <span class="p">{</span><span class="n">adrn</span><span class="o">/</span><span class="n">gala</span><span class="p">:</span> <span class="n">v0</span><span class="o">.</span><span class="mf">2.1</span><span class="p">},</span>
+    <span class="n">Year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2017</span><span class="p">},</span>
+    <span class="n">Bdsk</span><span class="o">-</span><span class="n">Url</span><span class="o">-</span><span class="mi">1</span> <span class="o">=</span> <span class="p">{</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dx</span><span class="o">.</span><span class="n">doi</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="mf">10.5281</span><span class="o">/</span><span class="n">zenodo</span><span class="o">.</span><span class="mi">833339</span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nd">@article</span><span class="p">{</span><span class="n">gaia</span><span class="p">,</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="p">{{</span><span class="n">Gaia</span> <span class="n">Collaboration</span><span class="p">}},</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;{The Gaia mission}&quot;</span><span class="p">,</span>
+    <span class="n">journal</span> <span class="o">=</span> <span class="p">{</span>\<span class="n">aap</span><span class="p">},</span>
+    <span class="n">archivePrefix</span> <span class="o">=</span> <span class="s2">&quot;arXiv&quot;</span><span class="p">,</span>
+    <span class="n">eprint</span> <span class="o">=</span> <span class="p">{</span><span class="mf">1609.04153</span><span class="p">},</span>
+    <span class="n">primaryClass</span> <span class="o">=</span> <span class="s2">&quot;astro-ph.IM&quot;</span><span class="p">,</span>
+    <span class="n">keywords</span> <span class="o">=</span> <span class="p">{</span><span class="n">space</span> <span class="n">vehicles</span><span class="p">:</span> <span class="n">instruments</span><span class="p">,</span> <span class="n">Galaxy</span><span class="p">:</span> <span class="n">structure</span><span class="p">,</span> <span class="n">astrometry</span><span class="p">,</span> <span class="n">parallaxes</span><span class="p">,</span> <span class="n">proper</span> <span class="n">motions</span><span class="p">,</span> <span class="n">telescopes</span><span class="p">},</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="mi">2016</span><span class="p">,</span>
+    <span class="n">month</span> <span class="o">=</span> <span class="n">nov</span><span class="p">,</span>
+    <span class="n">volume</span> <span class="o">=</span> <span class="mi">595</span><span class="p">,</span>
+    <span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.1051</span><span class="o">/</span><span class="mi">0004</span><span class="o">-</span><span class="mi">6361</span><span class="o">/</span><span class="mi">201629272</span><span class="p">},</span>
+    <span class="n">adsurl</span> <span class="o">=</span> <span class="p">{</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">adsabs</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="nb">abs</span><span class="o">/</span><span class="mi">2016</span><span class="n">A</span><span class="o">%</span><span class="mi">26</span><span class="n">A</span><span class="o">...</span><span class="mi">595</span><span class="n">A</span><span class="o">...</span><span class="mi">1</span><span class="n">G</span><span class="p">},</span>
+<span class="p">}</span>
+
+<span class="nd">@article</span><span class="p">{</span><span class="n">astropy</span><span class="p">,</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="p">{{</span><span class="n">Astropy</span> <span class="n">Collaboration</span><span class="p">}},</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;{Astropy: A community Python package for astronomy}&quot;</span><span class="p">,</span>
+    <span class="n">journal</span> <span class="o">=</span> <span class="p">{</span>\<span class="n">aap</span><span class="p">},</span>
+    <span class="n">archivePrefix</span> <span class="o">=</span> <span class="s2">&quot;arXiv&quot;</span><span class="p">,</span>
+    <span class="n">eprint</span> <span class="o">=</span> <span class="p">{</span><span class="mf">1307.6212</span><span class="p">},</span>
+    <span class="n">primaryClass</span> <span class="o">=</span> <span class="s2">&quot;astro-ph.IM&quot;</span><span class="p">,</span>
+    <span class="n">keywords</span> <span class="o">=</span> <span class="p">{</span><span class="n">methods</span><span class="p">:</span> <span class="n">data</span> <span class="n">analysis</span><span class="p">,</span> <span class="n">methods</span><span class="p">:</span> <span class="n">miscellaneous</span><span class="p">,</span> <span class="n">virtual</span> <span class="n">observatory</span> <span class="n">tools</span><span class="p">},</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="mi">2013</span><span class="p">,</span>
+    <span class="n">month</span> <span class="o">=</span> <span class="nb">oct</span><span class="p">,</span>
+    <span class="n">volume</span> <span class="o">=</span> <span class="mi">558</span><span class="p">,</span>
+    <span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.1051</span><span class="o">/</span><span class="mi">0004</span><span class="o">-</span><span class="mi">6361</span><span class="o">/</span><span class="mi">201322068</span><span class="p">},</span>
+    <span class="n">adsurl</span> <span class="o">=</span> <span class="p">{</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">adsabs</span><span class="o">.</span><span class="n">harvard</span><span class="o">.</span><span class="n">edu</span><span class="o">/</span><span class="nb">abs</span><span class="o">/</span><span class="mi">2013</span><span class="n">A</span><span class="o">%</span><span class="mi">26</span><span class="n">A</span><span class="o">...</span><span class="mi">558</span><span class="n">A</span><span class="o">..</span><span class="mi">33</span><span class="n">A</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="submitting-your-paper">
+<span id="submitting-your-paper"></span><h2>Submitting your paper<a class="headerlink" href="#submitting-your-paper" title="Permalink to this headline">¶</a></h2>
+<p>Submission then is as simple as:</p>
+<ul class="simple">
+<li>Filling in the <a class="reference external" href="http://joss.theoj.org/papers/new">short submission form</a></li>
+<li>Waiting for reviewers to be assigned over in the JOSS reviews repository: https://github.com/openjournals/joss-reviews</li>
+</ul>
+</div>
+<div class="section" id="submission-requirements">
+<span id="submission-requirements"></span><h2>Submission requirements<a class="headerlink" href="#submission-requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The software should be open source as per the <a class="reference external" href="https://opensource.org/osd">OSI definition</a></li>
+<li>The software should have an <strong>obvious</strong> research application</li>
+<li>You should be a major contributor to the software you are submitting</li>
+<li>The software should be a significant contribution to the available open source software that either enables some new research challenges to be addressed or makes addressing research challenges significantly better (e.g., faster, easier, simpler)</li>
+<li>The software should be feature complete (no half-baked solutions)
+Minor, ‘utility’ packages, including ‘thin’ API clients are not acceptable</li>
+</ul>
+<p>In addition, the software associated with your submission must:</p>
+<ul class="simple">
+<li>Be stored in a repository that can be cloned without registration</li>
+<li>Be stored in a repository that is browsable online without registration</li>
+<li>Have an issue tracker that is readable without registration</li>
+<li>Permit individuals to create issues/file tickets against your repository</li>
+</ul>
+<p>JOSS publishes articles about research software. This definition includes software that: solves complex modeling problems in a scientific context (physics, mathematics, biology, medicine, social science, neuroscience, engineering); supports the functioning of research instruments or the execution of research experiments; extracts knowledge from large data sets; offers a mathematical library, or similar.</p>
+<div class="section" id="what-about-submissions-that-rely-upon-proprietary-languages-development-environments">
+<span id="what-about-submissions-that-rely-upon-proprietary-languages-development-environments"></span><h3>What about submissions that rely upon proprietary languages/development environments?<a class="headerlink" href="#what-about-submissions-that-rely-upon-proprietary-languages-development-environments" title="Permalink to this headline">¶</a></h3>
+<p>We strongly prefer software that doesn’t rely upon proprietary (paid for) development environments/programming languages. However, provided <em>your submission</em> meets our submission requirements (including having a valid open source license) then we will consider your submission for review. Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.</p>
+</div>
+</div>
+<div class="section" id="the-review-process">
+<span id="the-review-process"></span><h2>The review process<a class="headerlink" href="#the-review-process" title="Permalink to this headline">¶</a></h2>
+<p>After submission:</p>
+<ul class="simple">
+<li>One or more JOSS reviewers are assigned and the review is carried out in the <a class="reference external" href="https://github.com/openjournals/joss-reviews">reviews repository</a></li>
+<li>Authors respond to reviewer-raised issues (if any are raised) on the submitted repository’s issue tracker. Reviewer contributions, like any other contributions, should be acknowledged in the repository</li>
+<li>Upon successful completion of the review, deposit a copy of your (updated) repository with a data-archiving service such as <a class="reference external" href="https://zenodo.org/">Zenodo</a> or <a class="reference external" href="https://figshare.com/">figshare</a>, issue a DOI for the archive, and update the review issue thread with your DOI</li>
+<li>After assignment of a DOI, your paper metadata is deposited in CrossRef and listed on the JOSS website</li>
+<li>And that’s it</li>
+</ul>
+<p>If you want to learn more about what the review process looks like in detail, take a look at the <a class="reference external" href="reviewer_guidelines.html">reviewer guidelines</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="review_criteria.html" class="btn btn-neutral float-right" title="Review Criteria" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Journal of Open Source Software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Open Journals.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

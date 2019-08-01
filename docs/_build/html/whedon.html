@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Interacting with Whedon &mdash; JOSS  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing the JOSS application" href="installing.html" />
+    <link rel="prev" title="Editorial Guide" href="editing.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> JOSS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Author and Reviewer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="submitting.html">Submitting a paper to JOSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviewer_guidelines.html">The JOSS review process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="review_criteria.html">Review criteria</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editor Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="editing.html">Editorial Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Whedon Editorial Bot</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interacting with Whedon</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#author-commands">Author commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#compiling-papers">Compiling papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finding-reviewers">Finding reviewers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#editorial-commands">Editorial commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#assigning-an-editor">Assigning an editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-and-removing-reviewers">Adding and removing reviewers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#starting-the-review">Starting the review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#assigning-the-software-archive">Assigning the software archive</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing the JOSS application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JOSS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Interacting with Whedon</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/whedon.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="interacting-with-whedon">
+<span id="interacting-with-whedon"></span><h1>Interacting with Whedon<a class="headerlink" href="#interacting-with-whedon" title="Permalink to this headline">¶</a></h1>
+<p>Whedon or <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> on GitHub, is our editorial bot that interacts with authors, reviewers, and editors on JOSS reviews.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> can do a bunch of different things. If you want to ask <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> what he can do, simply type the following in a JOSS <code class="docutils literal notranslate"><span class="pre">review</span></code> or <code class="docutils literal notranslate"><span class="pre">pre-review</span></code> issue:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>@whedon commands
+</pre></div>
+</div>
+<p>This will return an output something like this:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># List all of Whedon&#39;s capabilities
+@whedon commands
+
+# Assign a GitHub user as the sole reviewer of this submission
+@whedon assign @username as reviewer
+
+# Add a GitHub user to the reviewers of this submission
+@whedon add @username as reviewer
+
+# Remove a GitHub user from the reviewers of this submission
+@whedon remove @username as reviewer
+
+# List of editor GitHub usernames
+@whedon list editors
+
+# List of reviewers together with programming language preferences and domain expertise
+@whedon list reviewers
+
+# Change editorial assignment
+@whedon assign @username as editor
+
+# Set the software archive DOI at the top of the issue e.g.
+@whedon set 10.0000/zenodo.00000 as archive
+
+# Open the review issue
+@whedon start review
+
+🚧 🚧 🚧 Experimental Whedon features 🚧 🚧 🚧
+
+# Compile the paper
+@whedon generate pdf
+</pre></div>
+</div>
+<div class="section" id="author-commands">
+<span id="author-commands"></span><h2>Author commands<a class="headerlink" href="#author-commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="compiling-papers">
+<span id="compiling-papers"></span><h3>Compiling papers<a class="headerlink" href="#compiling-papers" title="Permalink to this headline">¶</a></h3>
+<p>When a <code class="docutils literal notranslate"><span class="pre">pre-review</span></code> or <code class="docutils literal notranslate"><span class="pre">review</span></code> issue is opened, <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> will try to compile the JOSS paper by looking for a <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> file in the repository specified when the paper was submitted.</p>
+<p>If he can’t find the <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> file he’ll say as much in the review issue. If he can’t compile the paper (i.e. there’s some kind of Pandoc error), he’ll try and report that error back in the thread too.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want to see what command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> is running when compiling the JOSS paper, take a look at the code <a class="reference external" href="https://github.com/openjournals/whedon/blob/195e6d124d0fbd5346b87659e695325df9a18334/lib/whedon/processor.rb#L109-L132">here</a>.</p>
+</div>
+<p>Anyone can ask <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> to compile the paper again (e.g. after a change has been made). To do this simply comment on the review thread as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>@whedon generate pdf
+</pre></div>
+</div>
+</div>
+<div class="section" id="finding-reviewers">
+<span id="finding-reviewers"></span><h3>Finding reviewers<a class="headerlink" href="#finding-reviewers" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes submitting authors suggest people the think might be appropriate to review their submission. If you want the link to the current list of JOSS reviewers, type the following in the review thread:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>@whedon list reviewers
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="editorial-commands">
+<span id="editorial-commands"></span><h2>Editorial commands<a class="headerlink" href="#editorial-commands" title="Permalink to this headline">¶</a></h2>
+<p>Most of <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code>’s functionality can only be used by the journal editors.</p>
+<div class="section" id="assigning-an-editor">
+<span id="assigning-an-editor"></span><h3>Assigning an editor<a class="headerlink" href="#assigning-an-editor" title="Permalink to this headline">¶</a></h3>
+<p>Editors can either assign themselves or other editors as the editor of a submission as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>@whedon assign @editorname as editor
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-and-removing-reviewers">
+<span id="adding-and-removing-reviewers"></span><h3>Adding and removing reviewers<a class="headerlink" href="#adding-and-removing-reviewers" title="Permalink to this headline">¶</a></h3>
+<p>Reviewers should be assigned by using the following commands:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># Assign a GitHub user as the sole reviewer of this submission
+@whedon assign @username as reviewer
+
+# Add a GitHub user to the reviewers of this submission
+@whedon add @username as reviewer
+
+# Remove a GitHub user from the reviewers of this submission
+@whedon remove @username as reviewer
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">assign</span></code> command clobbers all reviewer assignments. If you want to add an additional reviewer use the <code class="docutils literal notranslate"><span class="pre">add</span></code> command.</p>
+</div>
+</div>
+<div class="section" id="starting-the-review">
+<span id="starting-the-review"></span><h3>Starting the review<a class="headerlink" href="#starting-the-review" title="Permalink to this headline">¶</a></h3>
+<p>Once the reviewer(s) and editor have been assigned in the <code class="docutils literal notranslate"><span class="pre">pre-review</span></code> issue, the editor starts the review with:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>@whedon start review magic-word=bananas
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">If a reviewer recants their commitment or is unresponsive, editors can remove them with the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">remove</span> <span class="pre">&#64;username</span> <span class="pre">as</span> <span class="pre">reviewer</span></code>. You can also add new reviewers in the <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue, but in this case, you need to manually add a review checklist for them by editing the issue body.</p>
+</div>
+</div>
+<div class="section" id="assigning-the-software-archive">
+<span id="assigning-the-software-archive"></span><h3>Assigning the software archive<a class="headerlink" href="#assigning-the-software-archive" title="Permalink to this headline">¶</a></h3>
+<p>When a submission is accepted, we ask that the authors create an archive (on <a class="reference external" href="https://zenodo.org/">Zenodo</a>, <a class="reference external" href="https://figshare.com/">fig<strong>share</strong></a>, or other) and post the archive DOI in the <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue. The editor should add the <code class="docutils literal notranslate"><span class="pre">accepted</span></code> label on the issue and ask <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> to add the archive to the issue as follows:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>@whedon set &lt;archive doi&gt; as archive
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installing.html" class="btn btn-neutral float-right" title="Installing the JOSS application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="editing.html" class="btn btn-neutral" title="Editorial Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Open Journals.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

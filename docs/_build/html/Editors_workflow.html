@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>JOSS Editor workflow &mdash; JOSS  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> JOSS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Author and Reviewer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="submitting.html">Submitting a paper to JOSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviewer_guidelines.html">The JOSS review process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="review_criteria.html">Review criteria</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editor Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="editing.html">Editorial Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">The Whedon Editorial Bot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whedon.html">Interacting with Whedon</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing the JOSS application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JOSS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>JOSS Editor workflow</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Editors_workflow.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="joss-editor-workflow">
+<span id="joss-editor-workflow"></span><h1>JOSS Editor workflow<a class="headerlink" href="#joss-editor-workflow" title="Permalink to this headline">¶</a></h1>
+<p>Editors will manage the review workflow with the help of our bot, <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code>.
+The bot is summoned with commands typed directly on the GitHub issues.
+For a list of commands, type: <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">commands</span></code> (Also listed below.)</p>
+<ol class="simple">
+<li>An author submits a paper. They can select or not select an editor.</li>
+<li>If you are selected as an editor you get &#64;’d in the pre-review issue.
+This doesn’t mean that you’re the editor, just that you’ve been suggested by the author.</li>
+<li>If a paper is submitted without a recommended editor, it will show up in the weekly
+digest email under the category ‘Papers currently without an editor.’ Please review this
+weekly email and volunteer to edit papers that look to be in your domain. If you choose
+to be an editor in the issue thread type the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">assign</span> <span class="pre">&#64;yourhandle</span> <span class="pre">as</span> <span class="pre">editor</span></code></li>
+<li>Once you are the editor, find the link to the code repository in the Pre-review issue</li>
+<li>The editor looks at the software submitted and checks to see if<ul>
+<li>There’s a general description of the software</li>
+<li>The software is within scope as research software</li>
+<li>It has an OSI approved license</li>
+</ul>
+</li>
+<li>The editor responds to the author saying that things look in line (or not) and will search for reviewer</li>
+<li>The editor finds &gt;= 1 reviewers<ul>
+<li>use the list of reviewers: type the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">list</span> <span class="pre">reviewers</span></code>
+or look at list of reviewers in a Google <a class="reference external" href="https://docs.google.com/spreadsheets/d/1PAPRJ63yq9aPC1COLjaQp8mHmEq3rZUzwUYxTulyu78/edit?usp=sharing">spreadsheet</a>
+If people are in the review list, the editor can &#64;-mention them on the issue to see if they will review,
+e.g. &#64;person1 &#64;person2 can you review?</li>
+<li>or solicit reviewers outside the list. Send an email to people describing what JOSS is
+and asking if they would be interested in reviewing.</li>
+</ul>
+</li>
+<li>Editor tells whedon to assign the reviewer to the paper: use <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">assign</span> <span class="pre">&#64;reviewer</span> <span class="pre">as</span> <span class="pre">reviewer</span></code></li>
+<li>Create the actual review issue: <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">start</span> <span class="pre">review</span> <span class="pre">magic-word=bananas</span></code><ul>
+<li>An issue is created with the review checklist, e.g. https://github.com/openjournals/joss-reviews/issues/307</li>
+</ul>
+</li>
+<li>Close the pre-review issue.</li>
+<li>Review: The reviewer reviews the paper and has a conversation with the author. The editor lurks
+on this conversation and comes in if needed for questions (or CoC issues).
+The reviewer potentially asks for changes and the author makes changes. Everyone agrees it’s ready.</li>
+<li>Editor pings the EiC (&#64;arfon) to get the paper published (mention &#64;arfon in the issue)</li>
+<li>Celebrate publication! Tweet! Thank reviewers! Say thank you on issue.</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Open Journals.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

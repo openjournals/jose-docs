@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Editorial Guide &mdash; JOSS  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Interacting with Whedon" href="whedon.html" />
+    <link rel="prev" title="Review criteria" href="review_criteria.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> JOSS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Author and Reviewer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="submitting.html">Submitting a paper to JOSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviewer_guidelines.html">The JOSS review process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="review_criteria.html">Review criteria</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Editor Guides</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Editorial Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pre-review">Pre-review</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#finding-reviewers">Finding reviewers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#starting-the-review">Starting the review</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#review">Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#after-acceptance">After acceptance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-letter-to-invite-reviewers">Sample letter to invite reviewers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview-of-editorial-process">Overview of editorial process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#visualization-of-editorial-flow">Visualization of editorial flow</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">The Whedon Editorial Bot</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whedon.html">Interacting with Whedon</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guides</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing the JOSS application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JOSS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Editorial Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/editing.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="editorial-guide">
+<span id="editorial-guide"></span><h1>Editorial Guide<a class="headerlink" href="#editorial-guide" title="Permalink to this headline">¶</a></h1>
+<p>The Journal of Open Source Software (JOSS) conducts all peer review and editorial processes in the open, on the GitHub issue tracker.</p>
+<p>JOSS editors manage the review workflow with the help of our bot, <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code>. The bot is summoned with commands typed directly on the GitHub review issues. For a list of commands, type: <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">commands</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To learn more about <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code>’s functionalities, take a look at our <a class="reference external" href="/whedon.html">dedicated guide</a>.</p>
+</div>
+<div class="section" id="pre-review">
+<span id="pre-review"></span><h2>Pre-review<a class="headerlink" href="#pre-review" title="Permalink to this headline">¶</a></h2>
+<p>Once a submission comes in, it will be in the queue for a quick check by the Editor-in-chief (EiC). From there, it moves to a <code class="docutils literal notranslate"><span class="pre">PRE-REVIEW</span></code> issue, where the EiC will assign a handling editor, and the author can suggest reviewers. Initial direction to the authors for improving the paper can already happen here, especially if the paper lacks some requested sections.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">If the paper is out-of-scope for JOSS, editors assess this and notify the author in the <code class="docutils literal notranslate"><span class="pre">PRE-REVIEW</span></code> issue.</p>
+</div>
+<p>The EiC assigns an editor (or a volunteering editor self-assigns) with the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">assign</span> <span class="pre">&#64;username</span> <span class="pre">as</span> <span class="pre">editor</span></code> in a comment.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If a paper is submitted without a recommended editor, it will show up in the weekly digest email under the category ‘Papers currently without an editor.’ Please review this weekly email and volunteer to edit papers that look to be in your domain. If you choose to be an editor in the issue thread type the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">assign</span> <span class="pre">&#64;yourhandle</span> <span class="pre">as</span> <span class="pre">editor</span></code></p>
+</div>
+<div class="section" id="finding-reviewers">
+<span id="finding-reviewers"></span><h3>Finding reviewers<a class="headerlink" href="#finding-reviewers" title="Permalink to this headline">¶</a></h3>
+<p>At this point, the handling editor’s job is to identify reviewer(s). We like to have two reviewers per submission. If the editor is comfortable with their own assessment of the submission, one reviewer may be sufficient. If the editor feels particularly unsure of the submission, maybe a third reviewer can be recruited.</p>
+<p>To recruit reviewers, the handling editor can ping candidates on Twitter, or mention them in the <code class="docutils literal notranslate"><span class="pre">PRE-REVIEW</span></code> issue with their GitHub handle. After expressing initial interest, candidate reviewers may need a longer explanation via email. See sample reviewer invitation email, below.</p>
+<p>Once a reviewer accepts, the handling editor runs the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">assign</span> <span class="pre">&#64;username</span> <span class="pre">as</span> <span class="pre">reviewer</span></code> in the <code class="docutils literal notranslate"><span class="pre">PRE-REVIEW</span></code> issue. Add more reviewers with the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">add</span> <span class="pre">&#64;username</span> <span class="pre">as</span> <span class="pre">reviewer</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">assign</span></code> command clobbers all reviewer assignments. If you want to add an additional reviewer use the <code class="docutils literal notranslate"><span class="pre">add</span></code> command.</p>
+</div>
+</div>
+<div class="section" id="starting-the-review">
+<span id="starting-the-review"></span><h3>Starting the review<a class="headerlink" href="#starting-the-review" title="Permalink to this headline">¶</a></h3>
+<p>Next, run the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">start</span> <span class="pre">review</span> <span class="pre">magic-word=bananas</span></code>. If you forget the magic word, <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span></code> will remind you. This will open the <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue, with prepared review checklists for each reviewer, and instructions. The editor should close the <code class="docutils literal notranslate"><span class="pre">PRE-REVIEW</span></code> issue, at this point, and move the conversation to the separate <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue.</p>
+</div>
+</div>
+<div class="section" id="review">
+<span id="review"></span><h2>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue contains some instructions, and reviewer checklists. The reviewer(s) should check off items of the checklist one-by-one, until done. In the meantime, reviewers can engage the authors freely in a conversation aimed at improving the paper.</p>
+<p>If a reviewer recants their commitment or is unresponsive, editors can remove them with the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">remove</span> <span class="pre">&#64;username</span> <span class="pre">as</span> <span class="pre">reviewer</span></code>. You can also add new reviewers in the <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue, but in this case, you need to manually add a review checklist for them by editing the issue body.</p>
+<p>Comments in the <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue should be kept brief, as much as possible, with more lengthy suggestions or requests posted as separate issues, directly in the submission repository. A link-back to those issues in the <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> is helpful.</p>
+<p>When the reviewers are satisfied with the improvements, we ask that they confirm their recommendation to accept the submission.</p>
+</div>
+<div class="section" id="after-acceptance">
+<span id="after-acceptance"></span><h2>After acceptance<a class="headerlink" href="#after-acceptance" title="Permalink to this headline">¶</a></h2>
+<p>When a submission is accepted, we ask that the authors create an archive (on <a class="reference external" href="https://zenodo.org/">Zenodo</a>, <a class="reference external" href="https://figshare.com/">fig<strong>share</strong></a>, or other) and post the archive DOI in the <code class="docutils literal notranslate"><span class="pre">REVIEW</span></code> issue. The editor should add the <code class="docutils literal notranslate"><span class="pre">accepted</span></code> label on the issue, run the command<code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">set</span> <span class="pre">&lt;archive</span> <span class="pre">doi&gt;</span> <span class="pre">as</span> <span class="pre">archive</span></code>, and ping the EiC for final processing.</p>
+</div>
+<div class="section" id="sample-letter-to-invite-reviewers">
+<span id="sample-letter-to-invite-reviewers"></span><h2>Sample letter to invite reviewers<a class="headerlink" href="#sample-letter-to-invite-reviewers" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+Dear Dr. Jekyll,
+
+I found you following links from the page of The Super Project and/or on Twitter. This
+message is to ask if you can help us out with a submission to JOSE (The Journal of Open
+Source Software), where I’m editor.
+
+JOSS publishes articles about open source research software. The submission I&#39;d like you
+to review is titled: &quot;great software name here&quot;
+
+and the submission repository is at: https://github.com/&lt; … &gt;
+
+JOSS is a free, open-source, community driven and developer-friendly online journal
+(no publisher seeking to make revenue from the volunteer labor of researchers!).
+
+The review process at JOSS is unique: it is open and author-reviewer-editor conversations
+are encouraged.
+
+JOSS reviews involve downloading and installing the software, and inspecting the repository
+for key elements. See http://joss.theoj.org/about#reviewer_guidelines
+
+Editors and reviewers post comments on the REVIEW issue, and authors respond to the comments
+and improve their submission until acceptance (or withdrawal, if they feel unable to
+satisfy the review).
+
+Would you be able to review the great submission for JOSS? Or, if not, could you recommend
+someone from your team to help out?
+
+Kind regards,
+
+JOSS Editor.
+</pre></div>
+</div>
+</div>
+<div class="section" id="overview-of-editorial-process">
+<span id="overview-of-editorial-process"></span><h2>Overview of editorial process<a class="headerlink" href="#overview-of-editorial-process" title="Permalink to this headline">¶</a></h2>
+<p><strong>Step 1: An author submits a paper.</strong></p>
+<p>The author can choose to select an preferred editor based on the information available in our biographies. This can be changed later.</p>
+<p><strong>Step 2: If you are selected as an editor you get &#64;-mentioned in the pre-review issue.</strong></p>
+<p>This doesn’t mean that you’re the editor, just that you’ve been suggested by the author.</p>
+<p><strong>Step 3: Once you are the editor, find the link to the code repository in the <code class="docutils literal notranslate"><span class="pre">pre-review</span></code> issue</strong></p>
+<p><strong>Step 4: The editor looks at the software submitted and checks to see if:</strong></p>
+<ul class="simple">
+<li>There’s a general description of the software</li>
+<li>The software is within scope as research software</li>
+<li>It has an OSI approved license</li>
+</ul>
+<p><strong>Step 5: The editor responds to the author saying that things look in line (or not) and will search for reviewer</strong></p>
+<p><strong>Step 6: The editor finds &gt;= 1 reviewers</strong></p>
+<ul class="simple">
+<li>Use the list of reviewers: type the command <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">list</span> <span class="pre">reviewers</span></code> or look at list of reviewers in a Google <a class="reference external" href="https://docs.google.com/spreadsheets/d/1PAPRJ63yq9aPC1COLjaQp8mHmEq3rZUzwUYxTulyu78/edit?usp=sharing">spreadsheet</a></li>
+<li>If people are in the review list, the editor can &#64;-mention them on the issue to see if they will review: e.g. <code class="docutils literal notranslate"><span class="pre">&#64;person1</span> <span class="pre">&#64;person2</span> <span class="pre">can</span> <span class="pre">you</span> <span class="pre">review</span> <span class="pre">this</span> <span class="pre">submission</span> <span class="pre">for</span> <span class="pre">JOSS?</span></code></li>
+<li>Or solicit reviewers outside the list. Send an email to people describing what JOSS is and asking if they would be interested in reviewing.</li>
+</ul>
+<p><strong>Step 7: Editor tells Whedon to assign the reviewer to the paper</strong></p>
+<ul class="simple">
+<li>Use <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">assign</span> <span class="pre">&#64;reviewer</span> <span class="pre">as</span> <span class="pre">reviewer</span></code></li>
+<li>To add a second reviewer use <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">add</span> <span class="pre">&#64;reviwer2</span> <span class="pre">as</span> <span class="pre">reviewer</span></code></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">assign</span></code> command clobbers all reviewer assignments. If you want to add an additional reviewer use the <code class="docutils literal notranslate"><span class="pre">add</span></code> command.</p>
+</div>
+<p><strong>Step 8: Create the actual review issue</strong></p>
+<ul class="simple">
+<li>Use <code class="docutils literal notranslate"><span class="pre">&#64;whedon</span> <span class="pre">start</span> <span class="pre">review</span> <span class="pre">magic-word=bananas</span></code></li>
+<li>An issue is created with the review checklist, one per reviewer, e.g. https://github.com/openjournals/joss-reviews/issues/717</li>
+</ul>
+<p><strong>Step 9: Close the pre-review issue</strong></p>
+<p><strong>Step 10: The actual JOSS review</strong></p>
+<ul class="simple">
+<li>The reviewer reviews the paper and has a conversation with the author. The editor lurks on this conversation and comes in if needed for questions (or CoC issues).</li>
+<li>The reviewer potentially asks for changes and the author makes changes. Everyone agrees it’s ready.</li>
+</ul>
+<p><strong>Step 11: The editor pings the EiC to get the paper published</strong></p>
+<ul class="simple">
+<li>To get the paper published (mention EiC <code class="docutils literal notranslate"><span class="pre">&#64;arfon</span></code> in the issue)</li>
+</ul>
+<p><strong>Step 12: Celebrate publication! Tweet! Thank reviewers! Say thank you on issue.</strong></p>
+</div>
+<div class="section" id="visualization-of-editorial-flow">
+<span id="visualization-of-editorial-flow"></span><h2>Visualization of editorial flow<a class="headerlink" href="#visualization-of-editorial-flow" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Editorial flow" src="_images/JOSS-flowchart.png" /></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="whedon.html" class="btn btn-neutral float-right" title="Interacting with Whedon" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="review_criteria.html" class="btn btn-neutral" title="Review criteria" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Open Journals.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
