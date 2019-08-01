@@ -1,4 +1,4 @@
-Journal of Open Source Software yo!
+Journal of Open Source Software yo yo!
 ===============================
 
 The `Journal of Open Source Software
