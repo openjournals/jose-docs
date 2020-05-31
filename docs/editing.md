@@ -175,7 +175,7 @@ This doesn’t mean that you’re the editor, just that you’ve been suggested 
 
 **Step 11: The editor pings the EiC team to get the paper published**
 
-- To get the paper published, ping the `@openjournals/joss-eics` team on the review thread letting them know the paper is ready to be accepted.
+- To get the paper published, use `@whedon accept` on the review thread to ping the `@openjournals/joss-eics` team letting them know the paper is ready to be accepted.
 
 **Step 12: Celebrate publication! Tweet! Thank reviewers! Say thank you on issue.**
 
